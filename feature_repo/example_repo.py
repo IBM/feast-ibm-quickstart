@@ -29,7 +29,7 @@ driver = Entity(name="driver", join_keys=["driver_id"])
 
 driver_stats_source = DataEngineDataSource(
     name="driver_hourly_stats_source",
-    table="driver_stats",
+    table="driver_stats_demo",
     timestamp_field="event_timestamp",
 )
 # Our  IBM Cloud Data Engine Table contain sample data that includes a driver_id column, timestamps and

@@ -521,7 +521,7 @@ develop = false
 
 [package.dependencies]
 feast = "~0.25.0"
-ibmcloudsql = "~0.5.10"
+ibmcloudsql = "~0.5.11"
 pydantic = "^1"
 testfixtures = "^7.0.0"
 
@@ -531,7 +531,7 @@ url = "../spectacular"
 
 [[package]]
 name = "ibmcloudsql"
-version = "0.5.10"
+version = "0.5.11"
 description = "Python client for interacting with IBM Cloud Data Engine service"
 category = "main"
 optional = false
@@ -1681,7 +1681,7 @@ ibm-cos-sdk-s3transfer = [
 ]
 ibm-data-engine = []
 ibmcloudsql = [
-    {file = "ibmcloudsql-0.5.10.tar.gz", hash = "sha256:0d41a64b4c1de0620e147fb69f9b56242ee38e7816987f9687e4bdff9f5ed65c"},
+    {file = "ibmcloudsql-0.5.11.tar.gz", hash = "sha256:c701fd87a4812eae33bdb27e583187c7d19e557ffd87ab44d51b7eaada664d0e"},
 ]
 identify = [
     {file = "identify-2.5.8-py2.py3-none-any.whl", hash = "sha256:48b7925fe122720088aeb7a6c34f17b27e706b72c61070f27fe3789094233440"},

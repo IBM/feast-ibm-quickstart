@@ -10,4 +10,4 @@ offline_store:
     type: ibm_data_engine.DataEngineOfflineStore
     api_key: ${DATA_ENGINE_API_KEY}
     instance_crn: "crn:v1:bluemix:public:sql-query:us-south:a/b315532957b24aa0bcfd651f92a730a6:340f035f-fa03-4da4-9591-8f589d61ddc8::"
-    target_cos_url: cos://us-south/w3-search-reports-new/tmp/sql
+    target_cos_url: cos://us-south/feast-offline-store-demo/tmp/sql
