@@ -1,0 +1,13 @@
+project: test_plugin
+entity_key_serialization_version: 2
+registry: data/registry.db
+provider: local
+online_store:
+    type: redis
+    connection_string: 6a47efe4-1b53-4f47-a994-4165fad763bd.b2b5a92ee2df47d58bad0fa448c15585.databases.appdomain.cloud:32338,username=ibm_cloud_1424d580_b4a9_48ed_b7e6_ab9ca1164c83,password=${REDIS_PASSWORD},ssl=true,ssl_ca_certs=${REDIS_CERT_PATH},db=3
+
+offline_store:
+    type: ibm_data_engine.DataEngineOfflineStore
+    api_key: ${DATA_ENGINE_API_KEY}
+    instance_crn: "crn:v1:bluemix:public:sql-query:us-south:a/b315532957b24aa0bcfd651f92a730a6:340f035f-fa03-4da4-9591-8f589d61ddc8::"
+    target_cos_url: cos://us-south/w3-search-reports-new/tmp/sql

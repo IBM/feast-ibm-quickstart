@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "hackathon-demo-plugin"
+version = "0.1.0"
+description = ""
+authors = ["Abhay Ratnaparkhi <Abhay.Ratnaparkhi1@ibm.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+feast = {extras = ["redis"], version = "^0.25.0"}
+ibm-data-engine = { path = "~/cio-hackathon/spectacular" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
