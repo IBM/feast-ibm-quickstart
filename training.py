@@ -1,4 +1,8 @@
+import warnings
 from datetime import datetime
+
+from tabulate import tabulate
+warnings.simplefilter(action='ignore', category=FutureWarning)
 import pandas as pd
 
 from feast import FeatureStore
@@ -23,10 +27,7 @@ entity_df = pd.DataFrame.from_dict(
     }
 )
 
-#entity_df.to_csv('~/Desktop/entity_df.csv')
-#entity_df["event_timestamp"] = pd.to_datetime("now", utc=True)
-
-store = FeatureStore(repo_path=".")
+store = FeatureStore(repo_path="feature_repo")
 
 training_df = store.get_historical_features(
     entity_df=entity_df,
@@ -39,16 +40,6 @@ training_df = store.get_historical_features(
     ],
 ).to_df()
 
-print("\n----- Example features -----\n")
-print(type(training_df))
-print(training_df)
-
-store = FeatureStore(repo_path=".")
-
-
-print("----- Feature schema -----\n")
-print(training_df.info())
-
-print()
-print("----- Example features -----\n")
-print(training_df.head())
+print("\n----- Retrieved features -----\n")
+tabulated_result = tabulate(training_df, headers='keys', tablefmt='psql')
+print(f"{tabulated_result}")

@@ -18,7 +18,7 @@ You can run the overall workflow with `python test_workflow.py`.
    export REDIS_PASSWORD=<REDIS_PASSWORD>
    export REDIS_CERT_PATH=<REDIS_CERT_PATH>
    ```
-3. Download [ibm-cloud-data-engine plugin](https://github.ibm.com/CIO-Hackathon-2022/spectacular) project and configure path in pyproject.toml
+3. Download [ibm-cloud-data-engine plugin](https://github.ibm.com/CIO-Hackathon-2022/spectacular) project and configure path in [pyproject.toml](https://github.ibm.com/Abhay-Ratnaparkhi1/hackathon-demo/blob/main/feature_repo/pyproject.toml)
 4. Install dependencies
    
    ```
@@ -26,7 +26,7 @@ You can run the overall workflow with `python test_workflow.py`.
    ```
 4. Run [feast apply](https://docs.feast.dev/reference/feast-cli-commands#apply) to create/update feature store deployment.
    ```
-   poetry run feast -c ./example_repo.py apply
+   poetry run feast -c ./feature_repo apply
    ```
 5. Run training by retriving historical feature information from feature store
    ```
