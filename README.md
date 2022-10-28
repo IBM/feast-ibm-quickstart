@@ -18,7 +18,7 @@ You can run the overall workflow with `python test_workflow.py`.
    export REDIS_PASSWORD=<REDIS_PASSWORD>
    export REDIS_CERT_PATH=<REDIS_CERT_PATH>
    ```
-3. Download [ibm-cloud-data-engine plugin](https://github.ibm.com/CIO-Hackathon-2022/spectacular) project path in pyproject.toml
+3. Download [ibm-cloud-data-engine plugin](https://github.ibm.com/CIO-Hackathon-2022/spectacular) project and configure path in pyproject.toml
 4. Install dependencies
    
    ```
