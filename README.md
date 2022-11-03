@@ -14,7 +14,11 @@ You can run the overall workflow with `python test_workflow.py`.
 1. Procure [IBM Cloud Redis](https://www.ibm.com/cloud/databases-for-redis) and [IBM Cloud Data Engine](https://www.ibm.com/cloud/data-engine) services
 2. Set below environment variables
    ```
+   
    export DATA_ENGINE_API_KEY=<DATA_ENGINE_API_KEY>
+   export IBM_CLOUD_OBJECT_STORE_URL=<IBM_CLOUD_OBJECT_STORE_URL>
+   export REDIS_HOST=<REDIS_HOST>
+   export REDIS_PORT=<REDIS_PORT>
    export REDIS_PASSWORD=<REDIS_PASSWORD>
    export REDIS_CERT_PATH=<REDIS_CERT_PATH>
    ```

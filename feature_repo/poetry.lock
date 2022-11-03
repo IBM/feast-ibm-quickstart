@@ -513,10 +513,6 @@ ibmcloudsql = "~0.5.10"
 pydantic = "^1"
 testfixtures = "^7.0.0"
 
-[package.source]
-type = "directory"
-url = "../../spectacular"
-
 [[package]]
 name = "ibmcloudsql"
 version = "0.5.10"
