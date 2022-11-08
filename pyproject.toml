@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "hackathon-demo-plugin"
+name = "feast-ibm-quickstart"
 version = "0.1.0"
 description = ""
 authors = ["Abhay Ratnaparkhi <Abhay.Ratnaparkhi1@ibm.com>"]
